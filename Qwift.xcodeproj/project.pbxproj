@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05EE092AAD40CB0A99294BA8 /* Pods_Qwift_QwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAB44566419BADA11ACA420 /* Pods_Qwift_QwiftUITests.framework */; };
+		3FCC4F4926BDC21300E6EAAE /* QwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC4F4826BDC21300E6EAAE /* QwiftApp.swift */; };
+		3FCC4F4B26BDC21300E6EAAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC4F4A26BDC21300E6EAAE /* ContentView.swift */; };
+		3FCC4F4D26BDC21600E6EAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC4F4C26BDC21600E6EAAE /* Assets.xcassets */; };
+		3FCC4F5026BDC21600E6EAAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC4F4F26BDC21600E6EAAE /* Preview Assets.xcassets */; };
+		3FCC4F5B26BDC21700E6EAAE /* QwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC4F5A26BDC21700E6EAAE /* QwiftTests.swift */; };
+		3FCC4F6626BDC21700E6EAAE /* QwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC4F6526BDC21700E6EAAE /* QwiftUITests.swift */; };
+		3FCC4F7626BDC37800E6EAAE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC4F7526BDC37800E6EAAE /* Home.swift */; };
+		3FCC4F7926BDC38B00E6EAAE /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC4F7826BDC38B00E6EAAE /* Welcome.swift */; };
+		3FCC4F7B26BDC39A00E6EAAE /* Qs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC4F7A26BDC39A00E6EAAE /* Qs.swift */; };
+		3FCC4F7D26BDC42400E6EAAE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC4F7C26BDC42400E6EAAE /* Question.swift */; };
+		3FCC4F8726C3A22D00E6EAAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC4F8626C3A22C00E6EAAE /* LaunchScreen.storyboard */; };
+		3FF3293F26BDD10100EA3F37 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3293E26BDD10100EA3F37 /* QuestionViewModel.swift */; };
+		3FF3294126BDD9B900EA3F37 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3294026BDD9B900EA3F37 /* QuestionView.swift */; };
+		3FFBDFD82773F34100314F2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBDFD72773F34100314F2E /* GoogleService-Info.plist */; };
+		656B689E59900567C8D2861A /* Pods_Qwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2C2300F64916C54984CC8B /* Pods_Qwift.framework */; };
+		6E6888477939A07F9C60EF75 /* Pods_QwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFAC706C8DAF28FA3DF9558 /* Pods_QwiftTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FCC4F5726BDC21700E6EAAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FCC4F3D26BDC21300E6EAAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FCC4F4426BDC21300E6EAAE;
+			remoteInfo = Qwift;
+		};
+		3FCC4F6226BDC21700E6EAAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FCC4F3D26BDC21300E6EAAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FCC4F4426BDC21300E6EAAE;
+			remoteInfo = Qwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C9CB22051BEB180FD1516BF /* Pods-Qwift-QwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwift-QwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Qwift-QwiftUITests/Pods-Qwift-QwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		34F2DFCAF7598C70928812FE /* Pods-Qwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwift.debug.xcconfig"; path = "Target Support Files/Pods-Qwift/Pods-Qwift.debug.xcconfig"; sourceTree = "<group>"; };
+		3EAB44566419BADA11ACA420 /* Pods_Qwift_QwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qwift_QwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCC4F4526BDC21300E6EAAE /* Qwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCC4F4826BDC21300E6EAAE /* QwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QwiftApp.swift; sourceTree = "<group>"; };
+		3FCC4F4A26BDC21300E6EAAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FCC4F4C26BDC21600E6EAAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FCC4F4F26BDC21600E6EAAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FCC4F5126BDC21600E6EAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCC4F5626BDC21700E6EAAE /* QwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCC4F5A26BDC21700E6EAAE /* QwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QwiftTests.swift; sourceTree = "<group>"; };
+		3FCC4F5C26BDC21700E6EAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCC4F6126BDC21700E6EAAE /* QwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCC4F6526BDC21700E6EAAE /* QwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QwiftUITests.swift; sourceTree = "<group>"; };
+		3FCC4F6726BDC21700E6EAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCC4F7526BDC37800E6EAAE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		3FCC4F7826BDC38B00E6EAAE /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		3FCC4F7A26BDC39A00E6EAAE /* Qs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qs.swift; sourceTree = "<group>"; };
+		3FCC4F7C26BDC42400E6EAAE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		3FCC4F8626C3A22C00E6EAAE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FF3293E26BDD10100EA3F37 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		3FF3294026BDD9B900EA3F37 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		3FFBDFD72773F34100314F2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5D597C63B646DF892A84AAF7 /* Pods-QwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-QwiftTests/Pods-QwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E38CDE0D42BE4757CA5D948 /* Pods-Qwift-QwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwift-QwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Qwift-QwiftUITests/Pods-Qwift-QwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AFAC706C8DAF28FA3DF9558 /* Pods_QwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2C2300F64916C54984CC8B /* Pods_Qwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7E8F201D67DA9F3BB1FA9C /* Pods-Qwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwift.release.xcconfig"; path = "Target Support Files/Pods-Qwift/Pods-Qwift.release.xcconfig"; sourceTree = "<group>"; };
+		D3AB12A16FE95B777291AAF1 /* Pods-QwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwiftTests.release.xcconfig"; path = "Target Support Files/Pods-QwiftTests/Pods-QwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FCC4F4226BDC21300E6EAAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656B689E59900567C8D2861A /* Pods_Qwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCC4F5326BDC21700E6EAAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6888477939A07F9C60EF75 /* Pods_QwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCC4F5E26BDC21700E6EAAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EE092AAD40CB0A99294BA8 /* Pods_Qwift_QwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FCC4F3C26BDC21300E6EAAE = {
+			isa = PBXGroup;
+			children = (
+				3FCC4F4726BDC21300E6EAAE /* Qwift */,
+				3FCC4F5926BDC21700E6EAAE /* QwiftTests */,
+				3FCC4F6426BDC21700E6EAAE /* QwiftUITests */,
+				3FCC4F4626BDC21300E6EAAE /* Products */,
+				90D5EE7B267980024A8DFE6F /* Pods */,
+				B12E3CEEFCF31AF3F0D9E76E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3FCC4F4626BDC21300E6EAAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FCC4F4526BDC21300E6EAAE /* Qwift.app */,
+				3FCC4F5626BDC21700E6EAAE /* QwiftTests.xctest */,
+				3FCC4F6126BDC21700E6EAAE /* QwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FCC4F4726BDC21300E6EAAE /* Qwift */ = {
+			isa = PBXGroup;
+			children = (
+				3FFBDFD72773F34100314F2E /* GoogleService-Info.plist */,
+				3FF3293D26BDD0DF00EA3F37 /* ViewModel */,
+				3FCC4F7326BDC34E00E6EAAE /* Model */,
+				3FCC4F7426BDC35400E6EAAE /* View */,
+				3FCC4F4826BDC21300E6EAAE /* QwiftApp.swift */,
+				3FCC4F4A26BDC21300E6EAAE /* ContentView.swift */,
+				3FCC4F4C26BDC21600E6EAAE /* Assets.xcassets */,
+				3FCC4F5126BDC21600E6EAAE /* Info.plist */,
+				3FCC4F4E26BDC21600E6EAAE /* Preview Content */,
+			);
+			path = Qwift;
+			sourceTree = "<group>";
+		};
+		3FCC4F4E26BDC21600E6EAAE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3FCC4F4F26BDC21600E6EAAE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FCC4F5926BDC21700E6EAAE /* QwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FCC4F5A26BDC21700E6EAAE /* QwiftTests.swift */,
+				3FCC4F5C26BDC21700E6EAAE /* Info.plist */,
+			);
+			path = QwiftTests;
+			sourceTree = "<group>";
+		};
+		3FCC4F6426BDC21700E6EAAE /* QwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FCC4F6526BDC21700E6EAAE /* QwiftUITests.swift */,
+				3FCC4F6726BDC21700E6EAAE /* Info.plist */,
+			);
+			path = QwiftUITests;
+			sourceTree = "<group>";
+		};
+		3FCC4F7326BDC34E00E6EAAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FCC4F7C26BDC42400E6EAAE /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FCC4F7426BDC35400E6EAAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FCC4F7526BDC37800E6EAAE /* Home.swift */,
+				3FCC4F7826BDC38B00E6EAAE /* Welcome.swift */,
+				3FCC4F7A26BDC39A00E6EAAE /* Qs.swift */,
+				3FF3294026BDD9B900EA3F37 /* QuestionView.swift */,
+				3FCC4F8626C3A22C00E6EAAE /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FF3293D26BDD0DF00EA3F37 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FF3293E26BDD10100EA3F37 /* QuestionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		90D5EE7B267980024A8DFE6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34F2DFCAF7598C70928812FE /* Pods-Qwift.debug.xcconfig */,
+				BF7E8F201D67DA9F3BB1FA9C /* Pods-Qwift.release.xcconfig */,
+				6E38CDE0D42BE4757CA5D948 /* Pods-Qwift-QwiftUITests.debug.xcconfig */,
+				2C9CB22051BEB180FD1516BF /* Pods-Qwift-QwiftUITests.release.xcconfig */,
+				5D597C63B646DF892A84AAF7 /* Pods-QwiftTests.debug.xcconfig */,
+				D3AB12A16FE95B777291AAF1 /* Pods-QwiftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B12E3CEEFCF31AF3F0D9E76E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C2300F64916C54984CC8B /* Pods_Qwift.framework */,
+				3EAB44566419BADA11ACA420 /* Pods_Qwift_QwiftUITests.framework */,
+				7AFAC706C8DAF28FA3DF9558 /* Pods_QwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FCC4F4426BDC21300E6EAAE /* Qwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCC4F6A26BDC21700E6EAAE /* Build configuration list for PBXNativeTarget "Qwift" */;
+			buildPhases = (
+				C9A2AD504ECF4A416AF895A5 /* [CP] Check Pods Manifest.lock */,
+				3FCC4F4126BDC21300E6EAAE /* Sources */,
+				3FCC4F4226BDC21300E6EAAE /* Frameworks */,
+				3FCC4F4326BDC21300E6EAAE /* Resources */,
+				DD122004453D258554966985 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qwift;
+			productName = Qwift;
+			productReference = 3FCC4F4526BDC21300E6EAAE /* Qwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FCC4F5526BDC21700E6EAAE /* QwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCC4F6D26BDC21700E6EAAE /* Build configuration list for PBXNativeTarget "QwiftTests" */;
+			buildPhases = (
+				7277C7DA8920C0E7954D04AA /* [CP] Check Pods Manifest.lock */,
+				3FCC4F5226BDC21700E6EAAE /* Sources */,
+				3FCC4F5326BDC21700E6EAAE /* Frameworks */,
+				3FCC4F5426BDC21700E6EAAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FCC4F5826BDC21700E6EAAE /* PBXTargetDependency */,
+			);
+			name = QwiftTests;
+			productName = QwiftTests;
+			productReference = 3FCC4F5626BDC21700E6EAAE /* QwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FCC4F6026BDC21700E6EAAE /* QwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCC4F7026BDC21700E6EAAE /* Build configuration list for PBXNativeTarget "QwiftUITests" */;
+			buildPhases = (
+				81ADAB12D862AE09F72A5922 /* [CP] Check Pods Manifest.lock */,
+				3FCC4F5D26BDC21700E6EAAE /* Sources */,
+				3FCC4F5E26BDC21700E6EAAE /* Frameworks */,
+				3FCC4F5F26BDC21700E6EAAE /* Resources */,
+				C4324DE22A01F4F82AA3E15A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FCC4F6326BDC21700E6EAAE /* PBXTargetDependency */,
+			);
+			name = QwiftUITests;
+			productName = QwiftUITests;
+			productReference = 3FCC4F6126BDC21700E6EAAE /* QwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FCC4F3D26BDC21300E6EAAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3FCC4F4426BDC21300E6EAAE = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					3FCC4F5526BDC21700E6EAAE = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 3FCC4F4426BDC21300E6EAAE;
+					};
+					3FCC4F6026BDC21700E6EAAE = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 3FCC4F4426BDC21300E6EAAE;
+					};
+				};
+			};
+			buildConfigurationList = 3FCC4F4026BDC21300E6EAAE /* Build configuration list for PBXProject "Qwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FCC4F3C26BDC21300E6EAAE;
+			productRefGroup = 3FCC4F4626BDC21300E6EAAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FCC4F4426BDC21300E6EAAE /* Qwift */,
+				3FCC4F5526BDC21700E6EAAE /* QwiftTests */,
+				3FCC4F6026BDC21700E6EAAE /* QwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FCC4F4326BDC21300E6EAAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCC4F5026BDC21600E6EAAE /* Preview Assets.xcassets in Resources */,
+				3FCC4F8726C3A22D00E6EAAE /* LaunchScreen.storyboard in Resources */,
+				3FFBDFD82773F34100314F2E /* GoogleService-Info.plist in Resources */,
+				3FCC4F4D26BDC21600E6EAAE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCC4F5426BDC21700E6EAAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCC4F5F26BDC21700E6EAAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7277C7DA8920C0E7954D04AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81ADAB12D862AE09F72A5922 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qwift-QwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4324DE22A01F4F82AA3E15A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qwift-QwiftUITests/Pods-Qwift-QwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qwift-QwiftUITests/Pods-Qwift-QwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qwift-QwiftUITests/Pods-Qwift-QwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9A2AD504ECF4A416AF895A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD122004453D258554966985 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qwift/Pods-Qwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qwift/Pods-Qwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qwift/Pods-Qwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FCC4F4126BDC21300E6EAAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF3294126BDD9B900EA3F37 /* QuestionView.swift in Sources */,
+				3FCC4F7926BDC38B00E6EAAE /* Welcome.swift in Sources */,
+				3FF3293F26BDD10100EA3F37 /* QuestionViewModel.swift in Sources */,
+				3FCC4F4B26BDC21300E6EAAE /* ContentView.swift in Sources */,
+				3FCC4F7626BDC37800E6EAAE /* Home.swift in Sources */,
+				3FCC4F7D26BDC42400E6EAAE /* Question.swift in Sources */,
+				3FCC4F7B26BDC39A00E6EAAE /* Qs.swift in Sources */,
+				3FCC4F4926BDC21300E6EAAE /* QwiftApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCC4F5226BDC21700E6EAAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCC4F5B26BDC21700E6EAAE /* QwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCC4F5D26BDC21700E6EAAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCC4F6626BDC21700E6EAAE /* QwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FCC4F5826BDC21700E6EAAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FCC4F4426BDC21300E6EAAE /* Qwift */;
+			targetProxy = 3FCC4F5726BDC21700E6EAAE /* PBXContainerItemProxy */;
+		};
+		3FCC4F6326BDC21700E6EAAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FCC4F4426BDC21300E6EAAE /* Qwift */;
+			targetProxy = 3FCC4F6226BDC21700E6EAAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FCC4F6826BDC21700E6EAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FCC4F6926BDC21700E6EAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FCC4F6B26BDC21700E6EAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F2DFCAF7598C70928812FE /* Pods-Qwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Qwift/Preview Content\"";
+				DEVELOPMENT_TEAM = 833Z5S3N97;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Qwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "The-Tech-Coach.Qwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FCC4F6C26BDC21700E6EAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF7E8F201D67DA9F3BB1FA9C /* Pods-Qwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Qwift/Preview Content\"";
+				DEVELOPMENT_TEAM = 833Z5S3N97;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Qwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "The-Tech-Coach.Qwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FCC4F6E26BDC21700E6EAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D597C63B646DF892A84AAF7 /* Pods-QwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 833Z5S3N97;
+				INFOPLIST_FILE = QwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "The-tech-coach.QwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qwift.app/Qwift";
+			};
+			name = Debug;
+		};
+		3FCC4F6F26BDC21700E6EAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3AB12A16FE95B777291AAF1 /* Pods-QwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 833Z5S3N97;
+				INFOPLIST_FILE = QwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "The-tech-coach.QwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qwift.app/Qwift";
+			};
+			name = Release;
+		};
+		3FCC4F7126BDC21700E6EAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E38CDE0D42BE4757CA5D948 /* Pods-Qwift-QwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 833Z5S3N97;
+				INFOPLIST_FILE = QwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "The-tech-coach.QwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Qwift;
+			};
+			name = Debug;
+		};
+		3FCC4F7226BDC21700E6EAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9CB22051BEB180FD1516BF /* Pods-Qwift-QwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 833Z5S3N97;
+				INFOPLIST_FILE = QwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "The-tech-coach.QwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Qwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FCC4F4026BDC21300E6EAAE /* Build configuration list for PBXProject "Qwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCC4F6826BDC21700E6EAAE /* Debug */,
+				3FCC4F6926BDC21700E6EAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCC4F6A26BDC21700E6EAAE /* Build configuration list for PBXNativeTarget "Qwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCC4F6B26BDC21700E6EAAE /* Debug */,
+				3FCC4F6C26BDC21700E6EAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCC4F6D26BDC21700E6EAAE /* Build configuration list for PBXNativeTarget "QwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCC4F6E26BDC21700E6EAAE /* Debug */,
+				3FCC4F6F26BDC21700E6EAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCC4F7026BDC21700E6EAAE /* Build configuration list for PBXNativeTarget "QwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCC4F7126BDC21700E6EAAE /* Debug */,
+				3FCC4F7226BDC21700E6EAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FCC4F3D26BDC21300E6EAAE /* Project object */;
+}
