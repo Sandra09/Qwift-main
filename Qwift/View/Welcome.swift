@@ -6,15 +6,17 @@
 //
 
 import SwiftUI
+import Firebase
+
 struct Welcome: View {
     
     let didLogin: () -> ()
         
-    @State var emailField: String = ""
-    @State var password: String = ""
-    @State var fullName: String = ""
-    @State var dob: String = ""
-    @State var login = false
+    @State private var emailField: String = ""
+    @State private var password: String = ""
+    @State private var fullName: String = ""
+    @State private var dob: String = ""
+    @State private var login = false
 
     
     var body: some View {
@@ -73,8 +75,7 @@ struct Welcome: View {
             
                         HStack {
                             Spacer()
-                            Text(login ? "LOGIN"
-                                 : "Create Account")
+                            Text(login ? "LOGIN" : "Create Account")
                                 .foregroundColor(.white) .padding(.vertical, 8)
                                 .font(.system(size: 27, weight: .semibold))
                             Spacer()
@@ -93,12 +94,10 @@ struct Welcome: View {
         .navigationViewStyle(StackNavigationViewStyle())
         
     }
-    @State private var isPresented = false
     
     private func handleAction() {
         if login{
             loginUser()
-            //isPresented.toggle()
             //print("Should log into firebase with exisiting information")
         } else{
             createNewAccount()
@@ -107,8 +106,10 @@ struct Welcome: View {
         }
     }
     
+    @State private var currentUserlogin = false
     
     private func loginUser() {
+        currentUserlogin.toggle()
         FirebaseManager.shared.auth.signIn(withEmail: emailField, password: password) {
             result, err in
             if let err = err {
@@ -135,7 +136,7 @@ struct Welcome: View {
             }
             print("User created successfully: \(result?.user.uid ?? "")")
             
-            //self.loginStatusMessage = "User created successfully: \(result?.user.uid ?? "")"
+            self.loginStatusMessage = "User created successfully: \(result?.user.uid ?? "")"
         }
     }
     

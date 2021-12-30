@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-struct QUser{
-    let uid, email, profileImageUrl: String
-}
-
 class HomeViewModel: ObservableObject {
     
     @Published var errorMessage = ""
@@ -26,11 +22,12 @@ class HomeViewModel: ObservableObject {
     }
     
     func fetchCurrentUser() {
-        guard let uid = FirebaseManager.shared.auth
-                .currentUser?.uid else {return}
+        guard let uid = FirebaseManager.shared.auth.currentUser?.uid else {
+                    self.errorMessage = "Could not find uid"
+                    return
+                }
         
-        FirebaseManager.shared.firestore.collection("users")
-            .document(uid).getDocument{ snapshot, error in
+        FirebaseManager.shared.firestore.collection("users").document(uid).getDocument{ snapshot, error in
                 if let error = error {
                     self.errorMessage = "Failed to fetch current user: \(error)"
                     print("Failed to fetch current user:", error)
@@ -41,10 +38,8 @@ class HomeViewModel: ObservableObject {
                     self.errorMessage = "No data found"
                     return
                 }
-                let uid = data["uid"] as? String ?? ""
-                let email = data["email"] as? String ?? ""
-                let profileImageUrl = data["profileImageUrl"] as? String ?? ""
-                self.qUser = QUser(uid: uid, email:email, profileImageUrl: profileImageUrl)
+            
+                self.qUser = .init(data: data)
             }
     }
         
@@ -68,9 +63,7 @@ struct Home: View {
     @State var answered = 0
     
     @ObservedObject private var vm = HomeViewModel()
-    
-    let vc = UIViewController()
-    
+        
     var body: some View {
         VStack{
             
@@ -161,7 +154,6 @@ struct Home: View {
                                 .cancel()
                         ])
             }
-            .padding()
             .fullScreenCover(isPresented: $vm.isUserCurrentlyLoggedOut, onDismiss: nil) {
                 Welcome(didLogin: {
                 self.vm.isUserCurrentlyLoggedOut = false
