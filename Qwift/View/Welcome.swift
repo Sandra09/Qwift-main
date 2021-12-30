@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
-import Firebase
-
 struct Welcome: View {
+    
+    let didLogin: () -> ()
+        
     @State var emailField: String = ""
     @State var password: String = ""
     @State var fullName: String = ""
@@ -68,7 +69,6 @@ struct Welcome: View {
                     
                     Button {
                         handleAction()
-                        isPresented.toggle()
                     } label: {
             
                         HStack {
@@ -85,7 +85,6 @@ struct Welcome: View {
                 }
                 .padding()
             }
-            .fullScreenCover(isPresented: $isPresented, content: Home.init)
 
             .navigationTitle(login ? "Login" : "Create Account")
             .background(Color(.init(white: 0, alpha: 0.05))
@@ -99,17 +98,18 @@ struct Welcome: View {
     private func handleAction() {
         if login{
             loginUser()
-            
+            //isPresented.toggle()
             //print("Should log into firebase with exisiting information")
         } else{
             createNewAccount()
+            
             //print("Register a new account inside of Firebase Auth")
         }
     }
     
     
     private func loginUser() {
-        Auth.auth().signIn(withEmail: emailField, password: password) {
+        FirebaseManager.shared.auth.signIn(withEmail: emailField, password: password) {
             result, err in
             if let err = err {
                 print("Could not login user: ", err)
@@ -118,14 +118,15 @@ struct Welcome: View {
             }
             print("User logged in successfully: \(result?.user.uid ?? "")")
             
-            //self.loginStatusMessage = "User logged in successfully: \(result?.user.uid ?? "")"
+            self.loginStatusMessage = "User logged in successfully: \(result?.user.uid ?? "")"
+            self.didLogin()
         }
     }
     
     @State var loginStatusMessage = ""
     
     private func createNewAccount(){
-        Auth.auth().createUser(withEmail: emailField, password: password) {
+        FirebaseManager.shared.auth.createUser(withEmail: emailField, password: password) {
             result, err in
             if let err = err {
                 print("Could not creater user: ", err)
