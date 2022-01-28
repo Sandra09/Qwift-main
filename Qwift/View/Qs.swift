@@ -128,4 +128,5 @@ struct Qs: View {
         return fraction * width
     }
 }
+// code reference @Kavsoft on YouTube 
 
