@@ -9,15 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        //Welcome(didLogin: {
-            
-        //})
+//        Welcome(didLogin: {
+//
+//        })
         Home()
+        
+//        NavigationView{
+//            Login(didLogin: {})
+//                .navigationBarHidden(true)
+//                .navigationBarBackButtonHidden(true)
+//        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

@@ -4,7 +4,6 @@
 //
 //  Created by Student on 8/6/21.
 //
-
 import SwiftUI
 
 class HomeViewModel: ObservableObject {
@@ -124,16 +123,16 @@ struct Home: View {
     
     private var customNavBar: some View {
         HStack(alignment: .top) {
-            Image(systemName: "person.fill")
-                .font(.system(size: 34, weight: .heavy))
-                .padding(8)
-                .overlay(RoundedRectangle(cornerRadius: 44)
-                            .stroke(Color.black, lineWidth: 1))
-            VStack(alignment: .leading){
-                let email = vm.qUser?.email.replacingOccurrences(of: "@yahoo.com", with: "") ?? ""
-                Text(email)
-                    .font(.system(size: 24, weight: .bold))
-            }
+//            Image(systemName: "person.fill")
+//                .font(.system(size: 34, weight: .heavy))
+//                .padding(8)
+//                .overlay(RoundedRectangle(cornerRadius: 44)
+//                            .stroke(Color.black, lineWidth: 1))
+//            VStack(alignment: .leading){
+//                let email = vm.qUser?.email.replacingOccurrences(of: "@yahoo.com", with: "") ?? ""
+//                Text(email)
+//                    .font(.system(size: 24, weight: .bold))
+//            }
             Spacer()
             Button {
                 logOutOptions.toggle()

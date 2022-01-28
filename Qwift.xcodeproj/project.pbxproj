@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		05EE092AAD40CB0A99294BA8 /* Pods_Qwift_QwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAB44566419BADA11ACA420 /* Pods_Qwift_QwiftUITests.framework */; };
+		3F089D87279CC82E00C00115 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F089D86279CC82E00C00115 /* Login.swift */; };
+		3F089D89279CC95800C00115 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F089D88279CC95800C00115 /* CustomTextField.swift */; };
+		3F089D8B279D2F3500C00115 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F089D8A279D2F3500C00115 /* Register.swift */; };
 		3F3A0802277D9DFE005B2E70 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A0801277D9DFE005B2E70 /* FirebaseManager.swift */; };
 		3F3A0804277DD3D1005B2E70 /* QUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A0803277DD3D0005B2E70 /* QUser.swift */; };
 		3FCC4F4926BDC21300E6EAAE /* QwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC4F4826BDC21300E6EAAE /* QwiftApp.swift */; };
@@ -49,6 +52,9 @@
 		2C9CB22051BEB180FD1516BF /* Pods-Qwift-QwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwift-QwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Qwift-QwiftUITests/Pods-Qwift-QwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		34F2DFCAF7598C70928812FE /* Pods-Qwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qwift.debug.xcconfig"; path = "Target Support Files/Pods-Qwift/Pods-Qwift.debug.xcconfig"; sourceTree = "<group>"; };
 		3EAB44566419BADA11ACA420 /* Pods_Qwift_QwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qwift_QwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F089D86279CC82E00C00115 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		3F089D88279CC95800C00115 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		3F089D8A279D2F3500C00115 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		3F3A0801277D9DFE005B2E70 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		3F3A0803277DD3D0005B2E70 /* QUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QUser.swift; sourceTree = "<group>"; };
 		3FCC4F4526BDC21300E6EAAE /* Qwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +113,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F089D8C279D44EE00C00115 /* Other login */ = {
+			isa = PBXGroup;
+			children = (
+				3F089D86279CC82E00C00115 /* Login.swift */,
+				3F089D88279CC95800C00115 /* CustomTextField.swift */,
+				3F089D8A279D2F3500C00115 /* Register.swift */,
+			);
+			path = "Other login";
+			sourceTree = "<group>";
+		};
 		3FCC4F3C26BDC21300E6EAAE = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +204,7 @@
 				3FCC4F7A26BDC39A00E6EAAE /* Qs.swift */,
 				3FF3294026BDD9B900EA3F37 /* QuestionView.swift */,
 				3FCC4F8626C3A22C00E6EAAE /* LaunchScreen.storyboard */,
+				3F089D8C279D44EE00C00115 /* Other login */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -467,11 +484,14 @@
 				3FCC4F7926BDC38B00E6EAAE /* Welcome.swift in Sources */,
 				3FF3293F26BDD10100EA3F37 /* QuestionViewModel.swift in Sources */,
 				3F3A0802277D9DFE005B2E70 /* FirebaseManager.swift in Sources */,
+				3F089D8B279D2F3500C00115 /* Register.swift in Sources */,
 				3FCC4F4B26BDC21300E6EAAE /* ContentView.swift in Sources */,
 				3FCC4F7626BDC37800E6EAAE /* Home.swift in Sources */,
 				3FCC4F7D26BDC42400E6EAAE /* Question.swift in Sources */,
 				3FCC4F7B26BDC39A00E6EAAE /* Qs.swift in Sources */,
+				3F089D89279CC95800C00115 /* CustomTextField.swift in Sources */,
 				3F3A0804277DD3D1005B2E70 /* QUser.swift in Sources */,
+				3F089D87279CC82E00C00115 /* Login.swift in Sources */,
 				3FCC4F4926BDC21300E6EAAE /* QwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
