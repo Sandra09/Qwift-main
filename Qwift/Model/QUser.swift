@@ -16,3 +16,4 @@ struct QUser{
         self.profileImageUrl = data["profileImageUrl"] as? String ?? ""
     }
 }
+// code reference @CodeWithChris on YouTube 
