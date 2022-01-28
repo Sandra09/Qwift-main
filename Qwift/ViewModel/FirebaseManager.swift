@@ -26,3 +26,4 @@ class FirebaseManager: NSObject {
     }
     
 }
+// code reference @CodeWithChris on YouTube 
